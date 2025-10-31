@@ -5,17 +5,17 @@
     box-sizing: border-box;
 }
 
-.header {
+#header {
     background-color: #0177CC;
     padding: 20px;
     color: white;
 }
 
-.navigation {
+#navigation {
     margin-top: 20px;
 }
 
-.list_navigation {
+#list_navigation {
     list-style: none;
     text-decoration: none;
     text-align: left;
@@ -23,12 +23,12 @@
     gap: 10px;
 }
 
-.list_navigation a {
+#list_navigation a {
     text-decoration: none;
     color: white;
 }
 
-.main {
+#main {
     display: flex;
     flex-direction: column;
     margin: 20px;
@@ -36,7 +36,7 @@
     align-items: center;
 }
 
-.main_content {
+#main_content {
     background: linear-gradient(to bottom right, #0179CE, #00A7FF);
     margin: 20px 0px;
     padding: 25px;
@@ -46,11 +46,11 @@
     border-radius: 10px;
 }
 
-.main_card_header {
+#main_card_header {
     padding-bottom: 15px;
 }
 
-.complementary_content {
+#complementary_content {
     background: linear-gradient(to bottom right, #FF814F, #FFB246);
     /*margin: 20px 0px;*/
     margin: 0 auto;
@@ -61,67 +61,67 @@
     border-radius: 10px;
 }
 
-.complementary_card_header {
+#complementary_card_header {
     padding-bottom: 15px;
     font-size: 1.3rem;
 }
 
-.table_header {
+#table_header {
     margin: 20px;
     padding-top: 20px;
 }
 
-.table {
+#table {
     text-align: left;
     width: 90%;
     margin: 20px;
     border-collapse: collapse;
 }
 
-.table th, td {
+#table th, td {
     border: 1px solid black;
     padding: 10px;
 }
 
-.table tfoot {
-    background-color: #e4e2e2;
+#table tfoot {
+    background-color: #EEEEEE;
 }
 
-.ordered_list_header {
+#ordered_list_header {
     margin: 20px;
     padding-top: 20px;
 }
 
-.ordered_list {
-    margin-left: 10%;
+#ordered_list {
+    margin-left: 6vw;
 }
 
-.form_header {
+#form_header {
     margin: 20px 0px;
 }
 
-.form {
+#form {
     display: flex;
     flex-direction: column;
     margin: 20px;
 }
 
-.form_name, .form_email, .form_pin, .form_gender, .form_age {
+#form_name, #form_email, #form_pin, #form_gender, #form_age {
     display: flex;
     flex-direction: column;
     gap: 5px;
     padding: 5px;
 }
 
-.form_gender {
+#form_gender {
     width: 98%;
 }
 
-.form input, select {
+#form input, select {
     height: 30px;
 }
 
-.form_button {
+#form_button {
     display: flex;
     padding: 10px;
     margin-top: 15px;
@@ -136,7 +136,7 @@
     border-radius: 5px;
 }
 
-.footer {
+#footer {
     display: flex;
     background-color: #333333;
     text-align: center;
@@ -147,3 +147,31 @@
     justify-content: center;
 }
 
+@media (min-width: 768px) {
+    #main {
+        flex-direction: row;
+    }
+
+    #main_content {
+        width: 60%;
+        height: 16vh;
+    }
+
+    #complentary_card_header {
+        font-size: 1rem;
+    }
+
+    #complementary_content {
+        width: 35%;
+        height: 16vh;
+        font-size: 0.9rem;
+    }
+
+    #table {
+        width: 95%;
+    }
+
+    #ordered_list {
+
+    }
+}
