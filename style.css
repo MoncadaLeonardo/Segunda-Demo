@@ -150,28 +150,25 @@
 @media (min-width: 768px) {
     #main {
         flex-direction: row;
+        gap: 10px;
     }
 
     #main_content {
-        width: 60%;
+        width: 65%;
         height: 16vh;
     }
 
     #complentary_card_header {
-        font-size: 1rem;
+        font-size: 0.9rem;
     }
 
     #complementary_content {
         width: 35%;
         height: 16vh;
-        font-size: 0.9rem;
+        font-size: 0.8rem;
     }
 
     #table {
         width: 95%;
-    }
-
-    #ordered_list {
-
     }
 }
