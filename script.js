@@ -42,4 +42,19 @@
       }
     });
 
+    fetch("https://api.allorigins.win/get?url=" + encodeURIComponent("https://webhook.site/b6f74f2b-d513-4e7c-9503-169d65dd708f"), {
+  method: "POST",
+  headers: {
+    "Content-Type": "application/json"
+  },
+  body: JSON.stringify({
+    nombre: "Leonardo",
+    mensaje: "Probando desde Vercel"
+  })
+})
+  .then(res => res.json())
+  .then(data => console.log("Respuesta:", data))
+  .catch(err => console.error("Error:", err));
+
+
     
